@@ -1,85 +1,280 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoelvis Mulen</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/profile.css" />
-    <link rel="stylesheet" href="css/skills.css" />
-    <script defer src="js/app.js"></script>
-  </head>
-  <body>
-    <header class="topheader">
-      <nav class="topnav">
-        <a href="#" class="logo">
-          <img
-            height="50"
-            width="50"
-            src="img/professional-profile.png"
-            alt="programador"
-          />
-          <div class="logotype">
-            <br />
-            Cristian Carías{ code }
-          </div>
-        </a>
-        <button class="open-menu" aria-label="Abrir menú">
-          <img src="img/hamburger-icon.svg" alt="abrir menú" />
-        </button>
-        <ul class="menu">
-          <button class="close-menu" aria-label="Cerrar menú">
-            <img src="img/close-icon.svg" alt="cerrar menú" />
-          </button>
-          <li><a href="#profile" class="selected">Perfil</a></li>
-          <li><a href="#experience">Experiencia</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Portfolio | Cristian</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header class="menu">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/logo/logo.png" alt=""></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="burger-icon"><img style="width: 100%;" src="./img/icon/menu-burger.png" alt=""></span>
+                </button>
+                <div class="menu-option collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" data-scroll-nav="0" aria-current="page">Home<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-scroll-nav="1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-scroll-nav="2">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" data-scroll-nav="3">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works" data-scroll-nav="4">Work</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#foot" data-scroll-nav="5">Contact</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <div class="horizontal-padding vertical-padding">
-      <section class="profile">
-        <div class="profile-info">
-          <h1 class="profile-title">Hola, soy <br />Cristian Adalberto Carías</h1>
-          <p class="profile-details">
-            Soy un apasionado por la arquitectura y desarrollo de software, con
-            con entusiasmo de aprender mas y tomar nuevo retos.
-          </p>
-          <button class="profile-btn">Descargar cv</button>
+    <section class="section-home" data-scroll-index="0" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 home-title">
+                    <h1>Web developer</h1>
+                    <p>I am a web developer with a passion for code.</p>
+                    <a class="btn" href="#">Download CV</a>
+                </div>
+                <div class="col-8 col-sm-5 col-lg-6">
+                    <div class="img-banner">
+                        <img src="./img/banner/banner-1.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <span class="profile-img-section">
-          <img
-            class="profile-img"
-            src="img/professional-profile.png"
-            alt="programador"
-          />
-          <div class="profile-img-line"></div>
-        </span>
-      </section>
-    </div>
+    </section>
+    <section class="section-about section-padding" data-scroll-index="1" id="about">
+        <div class="container">
+            <div class="row section-title">
+                <h2>About</h2>
+            </div>
+            <div class="row">
+                <p><span>My name is: </span>Cristian Adalberto Carías Pérez</p>
+                <p><span>From: </span>EL salvador</p>
+                <p><span>Personal information: </span>I am a young programmer committed to solving digital problems
+                    through good programming practices in the web environment, adapting to international standards for
+                    the benefit of clients.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-skills section-padding" data-scroll-index="2" id="skills">
+        <div class="container">
+            <div class="row section-title">
+                <h2>My skills</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-2 mt-2 col-sm-6">
+                    <div class="skills-item shadow">
+                        <img class="icon-skills" src="./img/icon/icon-charp.png" alt="icon c#">
+                        <div class="description-skills">
+                            <p>C-charp</p>
+                            <a href="https://learn.microsoft.com/es-es/dotnet/csharp/tour-of-csharp/"
+                                target="_blank">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-2 col-sm-6">
+                    <div class="skills-item shadow">
+                        <img class="icon-skills" src="./img/icon/icon-html.png" alt="icon html">
+                        <div class="description-skills">
+                            <p>Html</p>
+                            <a href="https://developer.mozilla.org/es/docs/Glossary/HTML5" target="_blank">Learn
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-2 col-sm-6">
+                    <div class="skills-item shadow">
+                        <img class="icon-skills" src="./img/icon/icon-css.png" alt="icon css">
+                        <div class="description-skills">
+                            <p>Css</p>
+                            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-2 col-sm-6">
+                    <div class="skills-item shadow">
+                        <img class="icon-skills" src="./img/icon/icon-js.png" alt="icon javascript">
+                        <div class="description-skills">
+                            <p>JavaScript</p>
+                            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Learn
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-2 col-sm-6">
+                    <div class="skills-item shadow">
+                        <img class="icon-skills" src="./img/icon/icon-react.png" alt="icon react">
+                        <div class="description-skills">
+                            <p>React</p>
+                            <a href="https://es.reactjs.org/" target="_blank">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-2 col-sm-6">
+                    <div class="skills-item shadow">
+                        <img class="icon-skills" src="./img/icon/icon-bootstrap.png" alt="icon bootstrap">
+                        <div class="description-skills">
+                            <p>Bootstrap</p>
+                            <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+                                target="_blank">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-education section-padding" data-scroll-index="3" id="education">
+        <div class="container">
+            <div class="row section-title">
+                <h2>Education</h2>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-6 col-md-12 mt-5">
+                    <div class="card-education shadow">
+                        <div class="card-t">
+                            <h3>Web Developer</h3>
+                        </div>
+                        <div class="card-b">
+                            <p><span>School: </span>Kodigo -2023 <a href="https://kodigo.org/" target="_blank">Web</a></p>
+                            <div class="card-logo">
+                                <img src="./img/logo/logo-kodigo.png" alt="Logo Kodigo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-5">
+                    <div class="card-education shadow">
+                        <div class="card-t">
+                            <h3>Software Development Engineering Technician</h3>
+                        </div>
+                        <div class="card-b">
+                            <p><span>School: </span>Escuela Francisca Especializada ÁGAPE -2022 <a href="https://www.esfe.agape.edu.sv/" target="_blank">Web</a></p>
+                            <div class="card-logo">
+                                <img src="./img/logo/esfe.png" alt="logo esfe/Agape">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-experiences section-padding" data-scroll-index="#" id="experiences">
+        <div class="container">
+            <div class="row section-title">
+                <h2>Work experiences</h2>
+            </div>
+            <div class="row mt-5 b-experiences justify-content-center">
+                <div class="col-lg-6">
+                    <div class="experiences-letter">
+                        <p><span>Company: </span>Grupo Treming</p>
+                        <p><span>Rol: </span>Web and odoo developer intern</p>
+                        <p><span>Years: </span>2023</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <a class="experiences-img" href="https://www.treming.com/es" target="_blank">
+                        <img src="./img/logo/Treming.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-works section-padding" data-scroll-index="4" id="works">
+        <div class="container">
+            <div class="row section-title">
+                <h2>My Work</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/works/work-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">My portfolio</h5>
+                      <p class="card-text text-center mt-3">Technologies used</p>
+                      <div class="row">
+                        <div class="col-4 col-lg-4">
+                            <div class="skills-used">
+                                <img src="./img/icon/icon-html.png" alt="icon html">
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4">
+                            <div class="skills-used">
+                                <img src="./img/icon/icon-css.png" alt="icon css">
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4">
+                            <div class="skills-used">
+                                <img src="./img/icon/icon-bootstrap.png" alt="icon bootstrap">
+                            </div>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-primary mt-4">View</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot" data-scroll-index="5" id="foot">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4 col-lg-6 my-5">
+                    <div class="foot-img">
+                        <img src="./img/logo/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="net-social">
+                        <div class="net-social-item mx-2">
+                            <a href="https://www.facebook.com/cristianadalberto.carias/" target="_blank"><img src="./img/icon/icon-face.png" alt="icon facebook"></a>
+                        </div>
+                        <div class="net-social-item mx-2">
+                            <a href="https://www.linkedin.com/in/cristian-adalberto-carias-perez-50b26923b/" target="_blank"><img src="./img/icon/icon-link.png" alt="icon linkedin"></a>
+                        </div>
+                        <div class="net-social-item mx-2">
+                            <a href="https://github.com/Cris0Dev" target="_blank"><img src="./img/icon/icon-git-hub.png" alt="icon gitgub"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row copy">
+                <p>By cristian &copy; 2023, All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
 
-    <div class="horizontal-padding vertical-padding">
-      <section class="skills">
-        <h2 class="skills-title">Habilidades</h2>
-        <ul class="skills-list">
-          <li class="skills-skill">CSS</li>
-          <li class="skills-skill">HTML</li>
-          <li class="skills-skill">JavaScript</li>
-        </ul>
-      </section>
-    </div>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
 </html>

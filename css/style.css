@@ -1,0 +1,394 @@
+ /*--------------------------
+ fonts
+ ----------------------------*/
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+ /*--------------------------
+ global styles
+ ----------------------------*/
+ :root {
+     --main-color: #2c1c75;
+     --sec-color: #faa321;
+     --color-1: #ffffff;
+     --color-2: #000000;
+     --color-3: #3e28a0;
+
+     --shadow: #5a5454;
+ }
+
+ * {
+     padding: 0;
+     margin: 0;
+     outline: none;
+ }
+
+ body * {
+     font-family: 'Roboto Mono', monospace;
+ }
+ .section-padding{
+   padding: 100px 0;
+ }
+ .section-title h2{
+   font-size: 50px;
+   font-weight: 700;
+ }
+
+ /* ----- section navbar ---- */
+ .menu{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: var(--main-color);
+ }
+ .menu-scroll{
+    background-color: var(--sec-color);
+ }
+ .navbar .navbar-brand{
+    width: 100px;
+ }
+ .navbar .navbar-toggler{
+   color: #ffffff;
+ }
+ .navbar .navbar-toggler .burger-icon{
+   display: inline-block;
+   width: 1.5em;
+   height: 1.5em;
+   vertical-align: middle;
+   background-size: 100%;
+ }
+ .navbar .navbar-brand img{
+    width: 100%;
+ }
+ .menu-option{
+    background-color: var(--main-color);
+ }
+ .menu-option .nav-link{
+    color: #e0dfdf;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0 !important;
+    transition: all .8s;
+    border: 2px solid transparent;
+    position: relative;
+ }
+ .menu-option .nav-item{
+    margin-left: 15px;
+ }
+ .menu-option .nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #faa321;
+    transition: width .3s;
+ }
+.menu-option .nav-link:hover::before{
+    width: 100%;
+ }
+ .menu-option .nav-link:focus::before{
+    width: 100%;
+ }
+
+ /*---- home section ---- */
+ .section-home{
+    padding: 100px 0;
+    background-color: var(--main-color);
+    height: 100vh;
+ }
+ .section-home .img-banner img{
+    width: 100%;
+ }
+ .home-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .home-title h1{
+    font-size: 80px;
+    color: var(--sec-color);
+ }
+ .home-title p{
+    font-size: 20px;
+    color: #ffffff;
+ }
+ .home-title .btn{
+    width: 180px;
+    background-color: var(--sec-color);
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    align-self: flex-start;
+    border-radius: 15px;
+ }
+ .home-title .btn:hover{
+    color: #ffffff;
+    background-color: var(--color-3);
+ }
+
+ /*---- section about ---- */
+ .section-about{
+    padding: 80px 0;
+ }
+
+ .section-about  h2{
+    font-size: 50px;
+    font-weight: 700;
+ }
+ .section-about p{
+    font-size: 20px;
+ }
+ .section-about p span{
+    font-size: 20px;
+    font-weight: 700;
+ }
+
+ /*---- section skills ---- */
+ .section-skills{
+    background-color: #f7f6f6;
+ }
+
+ .section-skills  h2{
+    font-size: 50px;
+    font-weight: 700;
+ }
+ .section-skills p{
+    font-size: 20px;
+ }
+ .skills-item{
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* box-shadow: 2px 3px var(--shadow); */
+ }
+ .skills-item .icon-skills{
+    width: 50px;
+ }
+
+ .description-skills{
+    margin-top: 15px;
+ }
+ .description-skills p{
+    font-size: 16px;
+    text-align: center;
+ }
+ .description-skills p span{
+    font-weight: 700;
+ }
+
+ /* ----Education ----*/
+ .card-education{
+   width: 450px;
+   height: 280px;
+   margin: auto;
+ }
+
+ .card-t{
+   width: 100%;
+   height: 80px;
+   background-color: var(--main-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .card-education h3{
+   font-size: 25px;
+   font-weight: 700;
+   text-align: center;
+   color: #ffffff;
+ }
+ .card-b{
+   padding: 0 20px;
+ }
+ .card-education p{
+   font-size: 20px;
+   margin-top: 20px;
+ }
+ .card-education p span{
+   font-weight: 700;
+ }
+ .card-logo{
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .card-logo img{
+   height: 100%;
+ }
+
+ /* ----------section experiences --------------*/
+ .section-experiences{
+   background-color: #f7f6f6;
+ }
+
+ .experiences-letter,.experiences-img{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+ }
+ .experiences-letter p{
+   font-size: 20px;
+   padding-top: 10px;
+ }
+ .b-experiences{
+   border-bottom: 2px solid var(--sec-color);
+   border-top: 2px solid var(--sec-color);
+ }
+ .experiences-letter p span{
+   font-weight: 700;
+ }
+ .experiences-img , .experiences-img img{
+   width: 100%;
+ }
+
+ /* ------------Woks -------------*/
+ .section-works .card-title{
+   font-weight: 700;
+   padding-bottom: 20px;
+ }
+ .section-works .card{
+   z-index: -1;
+ }
+ .section-works .card{
+   padding: 0;
+ }
+ .skills-used{
+   width: 90%;
+   margin: auto;
+ }
+ .skills-used img{
+   width: 100%;
+ }
+ .section-works .card-body .btn{
+   background-color: var(--main-color);
+   border: none;
+ }
+
+
+ /* footer page */
+ .foot{
+   background-color: var(--main-color);
+ }
+.foot{
+   width: 100%;
+}
+.foot img{
+   width: 80%;
+}
+.net-social{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.net-social .net-social-item {
+   width: 40px;
+}
+.net-social .net-social-item a, .net-social .net-social-item a img{
+   width: 100%;
+}
+ .copy p{
+   color: #ffffff;
+   text-align: center;
+ }
+
+
+ /*---------------------
+  responsive
+  ------------------------- */
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 576px){
+   .section-title h2 {
+      font-size: 30px;
+      text-align: center;
+  }
+/*---- home section ---- */
+.section-home .img-banner img{
+   width: 100%;
+}
+.home-title {
+   margin-top: 30px;
+}
+.home-title h1{
+   font-size: 45px;
+}
+.home-title p{
+   font-size: 15px;
+}
+.home-title .btn{
+   width: 150px;
+   font-size: 15px;
+}
+.img-banner{
+   margin-top: 30px;
+}
+
+/*---- section about ---- */
+.section-about  h2{
+   text-align: center;
+   font-size: 40px;
+}
+.section-about p, .section-about p span{
+   font-size: 16px;
+}
+/*---- section skills ---- */
+.section-skills  h2{
+   text-align: center;
+   font-size: 40px;
+}
+/* ----Education ----*/
+.card-education{
+   width: 200px;
+   height: 280px;
+ }
+ .card-t{
+   height: 85px;
+ }
+
+ .card-education h3{
+   font-size: 16px;
+   font-weight: 700;
+ }
+ .card-education p{
+   font-size: 16px;
+ }
+ .card-logo{
+   height: 40px;
+ }
+
+ /* ------------Woks -------------*/
+ .section-works .card{
+   padding: 0;
+ }
+ .section-works .card-title {
+   text-align: center;
+}
+
+ /* footer page */
+ .foot{
+   background-color: var(--main-color);
+ }
+.foot{
+   width: 100%;
+}
+.foot img{
+   width: 80%;
+}
+.net-social .net-social-item {
+   width: 30px;
+}
+ .copy p{
+   margin-top: 20px;
+ }
+}
